@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% load static %}
+<h1 class="text-center">Resume Flow</h1>
+<form method="POST" enctype="multipart/form-data" action="{% url 'process_uploaded_files' %}" id="input-form">
+  {% csrf_token %}
+  <div class="form-group">
+    <div>
+      <label for="pdf_files">Upload Resume PDF Files</label>
+    </div>
+    <div>
+      <input type="file" name="pdf_files" placeholder="Resume PDF Files" multiple class="form-control">
+    </div>
+    <br>
+    <div>
+      <label for="job_description">Enter Job Description Here:</label>
+    </div>
+    <div>
+      <textarea class="form-control" name="job_description" placeholder="Job Description"></textarea>
+    </div>
+    <br>
+    <div>
+      <button type="submit" id="Submit" class="form-control btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+<br>
+<br>
+<div id="processing" style="display: none;" class="text-center">
+  <p>Processing...</p>
+  <img src="{% static 'main_app/images/lotte_robotic_animation.gif' %}" alt="robot" style="width: 150px; height: 150px;" >
+</div>
+{% endblock %}
