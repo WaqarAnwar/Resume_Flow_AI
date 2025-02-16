@@ -12,6 +12,9 @@ by automating resume ranking based on job description relevancy.
 3. AI-Driven Ranking: Leverages DeepSeek’s NLP capabilities to rank resumes based on job description relevance, technical skills, experience alignment, and keyword matching.
 4. Ranked Output: Delivers an ordered list of candidates, prioritized by fit for the role.
 
+## Demo Link:
+https://www.linkedin.com/feed/update/urn:li:activity:7296840695271571456/
+
 ## Limitations:
 
 1. It may take 1 to 2 minutes to respond, depends upon the number of resumes being input.
