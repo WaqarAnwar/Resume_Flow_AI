@@ -1,42 +1,39 @@
-# ResumeFlow
+# ResumeFlow - AI-Powered Resume Screening for HR Efficiency
 
-Tired of filtering Resumes of candidates? Introducing ResumeFlow!
+ResumeFlow is an intelligent recruitment solution that leverages DeepSeek's NLP capabilities and Django to automate resume screening. It analyzes resumes against job descriptions and provides ranked candidate lists, enabling HR teams to prioritize top applicants efficiently.
 
-ResumeFlow is an AI App built using DeepSeek API and Django that makes it easier for HR to screen candidates 
-by automating resume ranking based on job description relevancy.
+[Demo Preview](https://www.linkedin.com/posts/mwaqaranwar123_hrtech-hrsoftware-recruitment-activity-7296840695271571456-Qc7L/)  
+*Video demonstration available on LinkedIn*
 
-## Core Functionality:
+## Key Features
 
-1. Batch Resume Processing: Accepts a batch of resumes (only PDF) in a single workflow.
-2. Job Description Analysis: Parses key requirements, skills, and qualifications from the provided job description.
-3. AI-Driven Ranking: Leverages DeepSeek’s NLP capabilities to rank resumes based on job description relevance, technical skills, experience alignment, and keyword matching.
-4. Ranked Output: Delivers an ordered list of candidates, prioritized by fit for the role.
+- **Batch PDF Processing**: Analyze multiple resumes simultaneously (PDF format only)
+- **Smart Job Description Parsing**: Automatically extracts key requirements and qualifications
+- **AI Ranking Engine**: Scores candidates using:
+  - Skills relevance (e.g. NLP expertise for data science roles)
+  - Experience alignment
+  - Qualification matching
+- **Explainable Rankings**: Provides clear rationale for candidate prioritization
 
-## Demo Link:
-https://www.linkedin.com/feed/update/urn:li:activity:7296840695271571456/
+## Technical Requirements
 
-## Considerations:
-
-It may take 1 to 2 minutes to respond, depends upon the number of resumes being input.
+- Python 3.8+
+- DeepSeek V3 API access (Free tier available via [OpenRouter](https://openrouter.ai/))
+- PDF file format for resumes
 
 ## Setup
 
-1. Download the source code
+1. Clone repository
 2. Make a virtual environment and activate it.
 3. Inside the directory of the project, run:
-
 ```bash
 pip install -r requirements.txt
 ```
-
-4. Get an API key of Deepseek-V3 free version from OpenRouter and put it in a .env file in project root directory.
-
+4. Get an API key of Deepseek-V3 free version from [OpenRouter](https://openrouter.ai/) and put it in a .env file in project root directory (open .env.example file for seeing variable naming)
 5. Then run: 
-
 ```bash
 python manage.py runserver
 ```
-
 6. Then go to localhost:8000 on your browser to use the AI App. 
 
 
