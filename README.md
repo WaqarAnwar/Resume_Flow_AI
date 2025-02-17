@@ -15,9 +15,9 @@ by automating resume ranking based on job description relevancy.
 ## Demo Link:
 https://www.linkedin.com/feed/update/urn:li:activity:7296840695271571456/
 
-## Limitations:
+## Considerations:
 
-1. It may take 1 to 2 minutes to respond, depends upon the number of resumes being input.
+It may take 1 to 2 minutes to respond, depends upon the number of resumes being input.
 
 ## Setup
 
