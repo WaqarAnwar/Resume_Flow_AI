@@ -29,7 +29,8 @@ https://www.linkedin.com/feed/update/urn:li:activity:7296840695271571456/
 pip install -r requirements.txt
 ```
 
-4. Get an API key from Deepseek and put it in a .env file in project root directory.
+4. Get an API key of Deepseek-V3 free version from OpenRouter and put it in a .env file in project root directory.
+
 5. Then run: 
 
 ```bash
